@@ -5,3 +5,65 @@
 	text-decoration: none;
 }
 
+.first-box {
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	width: 100%;
+	height: 690px;
+	background: #EFEFEF;
+	padding-bottom: 50px;
+}
+
+button {
+	height: 50px;
+	background-color: #EFEFEF;
+	font-size: 30px;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	color: #FF1200;
+}
+
+.second-box {
+	width: 100%;
+	height: 690px;
+	background-color: #FDFDFD;
+	padding: 30px;
+}
+
+.text {
+	position: relative;
+	left: 0;
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 8px;
+}
+
+.line {
+	position: relative;
+	left: 0;
+	width: 140px;
+	height: 4px;
+	background-color: #FF1200;
+}
+
+img {
+	position: absolute;
+	right: 0;
+	width: 222px;
+	height: 130px;
+	margin-top: 10px;
+}
+
+.button-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 690px;
+	background: #EFEFEF;
+}

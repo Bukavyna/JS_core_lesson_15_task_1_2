@@ -8,18 +8,54 @@
 </head>
 <body>
 
-<div class="first-box">
-	<button id="down">Scroll down</button>
-</div>
 
-<div class="second-box">
-	<p class="text">"Slide from left"</p>
-		<div class="line"></div>
-		<img id="image_war" src="base/images/image-1.png">
-</div>
+<!--Скрол і різні примінення до нього!-->
 
-<div class="button-box">
-	<button id="up">Scroll up</button>
+
+<!--<div class="first-box">-->
+<!--	<button id="down">Scroll down</button>-->
+<!--</div>-->
+
+<!--<div class="second-box">-->
+<!--	<p class="text">"Slide from left"</p>-->
+<!--		<div class="line"></div>-->
+<!--		<img id="image_war" src="base/images/image-1.png">-->
+<!--</div>-->
+
+<!--<div class="button-box">-->
+<!--	<button id="up">Scroll up</button>-->
+<!--</div>-->
+
+
+
+<!--Створення чекбоксів за допомоги JS та перенесення на інше поле!! -->
+
+<div class="container">
+
+	<div class="pen">
+		<p class="text">Pencil</p>
+		<img src="base/images/piggy-bank.png">
+	</div>
+	<div id="task-board">
+		<div hidden class="error" id="check_error">
+			<h3>Попередження!!!</h3>
+			<p>Пусте поле не можна добавити!</p>
+		</div>
+		<div hidden class="error" id="check_error2">
+			<h3>Попередження!!!</h3>
+			<p>Останній таск зі списку ви не можете видалити!</p>
+		</div>
+		<div class="task_list task_list-1">
+			<h3 class="task_list-text">Список завдань</h3>
+			<form name="formOne" class="formOne">
+			</form>
+		</div>
+		<form name="formTwo" class="task_list task_list-2">
+			<h3 class="task_list-text">Додати нове завдання</h3>
+			<input type="text" name="text" id="input_text">
+			<input type="button" name="button" id="button" value="ДОДАТИ" onclick="addCheckbox()">
+		</form>
+	</div>
 </div>
 
 	<script src="base/JS/script.js"></script>

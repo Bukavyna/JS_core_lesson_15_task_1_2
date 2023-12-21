@@ -5,65 +5,201 @@
 	text-decoration: none;
 }
 
-.first-box {
+
+/*Скрол і різні примінення до нього!*/
+
+/*.first-box {*/
+/*	display: flex;*/
+/*	justify-content: center;*/
+/*	align-items: end;*/
+/*	width: 100%;*/
+/*	height: 690px;*/
+/*	background: #EFEFEF;*/
+/*	padding-bottom: 50px;*/
+/*}*/
+
+/*button {*/
+/*	height: 50px;*/
+/*	background-color: #EFEFEF;*/
+/*	font-size: 30px;*/
+/*	font-weight: bold;*/
+/*	border: none;*/
+/*	cursor: pointer;*/
+/*}*/
+
+/*button:hover {*/
+/*	color: #FF1200;*/
+/*}*/
+
+/*.second-box {*/
+/*	width: 100%;*/
+/*	height: 690px;*/
+/*	background-color: #FDFDFD;*/
+/*	padding: 30px;*/
+/*}*/
+
+/*.text {*/
+/*	position: relative;*/
+/*	left: 0;*/
+/*	font-size: 24px;*/
+/*	font-weight: 400;*/
+/*	margin-bottom: 8px;*/
+/*}*/
+
+/*.line {*/
+/*	position: relative;*/
+/*	left: 0;*/
+/*	width: 140px;*/
+/*	height: 4px;*/
+/*	background-color: #FF1200;*/
+/*}*/
+
+/*img {*/
+/*	position: absolute;*/
+/*	right: 0;*/
+/*	width: 222px;*/
+/*	height: 130px;*/
+/*	margin-top: 10px;*/
+/*}*/
+
+/*.button-box {*/
+/*	display: flex;*/
+/*	justify-content: center;*/
+/*	align-items: center;*/
+/*	width: 100%;*/
+/*	height: 690px;*/
+/*	background: #EFEFEF;*/
+/*}*/
+
+/*.container {*/
+/*	width: 100%;*/
+/*	height: 88vw;*/
+/*}*/
+
+
+
+/*Створення чекбоксів за допомоги JS та перенесення на інше поле!!*/
+
+
+body {
+	background: linear-gradient(to bottom, white 50%, black 50%);
+	height: 100vh;
+	padding-top: 50px;
+}
+
+.container {
 	display: flex;
-	justify-content: center;
-	align-items: end;
-	width: 100%;
-	height: 690px;
-	background: #EFEFEF;
-	padding-bottom: 50px;
+	justify-content: space-between;
+	width: 800px;
+	height: 500px;
+	margin: 0 auto;
 }
 
-button {
-	height: 50px;
-	background-color: #EFEFEF;
-	font-size: 30px;
-	font-weight: bold;
-	border: none;
-	cursor: pointer;
-}
-
-button:hover {
-	color: #FF1200;
-}
-
-.second-box {
-	width: 100%;
-	height: 690px;
-	background-color: #FDFDFD;
-	padding: 30px;
+.pen {
+	width: 20px;
+	height: 360px;
+	background-color: white;
+	transform: translateX(-50%);
+	box-shadow: black -1px 2px 4px 2px ;
+	border-left: black 1px solid;
+	border-radius: 10px;
+	margin-top: 29px;
+	padding-top: 15px;
 }
 
 .text {
-	position: relative;
-	left: 0;
-	font-size: 24px;
-	font-weight: 400;
-	margin-bottom: 8px;
-}
-
-.line {
-	position: relative;
-	left: 0;
-	width: 140px;
-	height: 4px;
-	background-color: #FF1200;
+	margin: 0;
+	font-size: 10px;
+	transform: rotateZ(-90deg);
 }
 
 img {
-	position: absolute;
-	right: 0;
-	width: 222px;
-	height: 130px;
-	margin-top: 10px;
+	width: 50%;
+	margin: 10px 5px;
 }
 
-.button-box {
+.pen::before {
+	content: "";
+	position: absolute;
+	bottom: -34px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 42px solid white;
+	z-index: 1;
+}
+
+#task-board {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 690px;
-	background: #EFEFEF;
+	justify-content: space-between;
+	width: 90%;
+	height: 100%;
+	background-color: white;
+	border: black 7px solid;
+	border-radius: 30px;
+	box-shadow: white 0 0 10px 1px;
+	overflow: hidden;
+}
+
+.error {
+	position: absolute;
+	top: 160px;
+	left: 180px;
+	width: 608px;
+	height: 70px;
+	line-height: 24px;
+	background-color: #FADAD8;
+	color: #76352C;
+	padding: 10px;
+}
+
+p {
+	color: red;
+}
+
+.error::before {
+	content: "X";
+	position: absolute;
+	left: 588px;
+	color: black;
+}
+
+.task_list {
+	width: 50%;
+	height: 100%;
+	border: 3px black solid;
+	padding-top: 30px;
+}
+
+.task_list-1 {
+	padding-left: 15px;
+}
+
+.formOne {
+	margin-top: 40px;
+	line-height: 25px;
+}
+
+.task_list-2 {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+h3 {
+	color: red;
+}
+
+#input_text {
+	width: 120px;
+	border-bottom: black 1px solid;
+	margin: 40px auto;
+	outline: none;
+}
+
+#button {
+	width: 70px;
+	height: 30px;
+	background-color: black;
+	color: white;
+	margin: 0 auto;
 }
